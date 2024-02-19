@@ -52,6 +52,7 @@ a:hover {
   -ms-animation: blink 0.7s infinite;
   -o-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
+  margin-top: 12px;
 }
 @-webkit-keyframes blink {
   0% {
