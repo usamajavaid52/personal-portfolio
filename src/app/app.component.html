@@ -1,68 +1,28 @@
-<!-- ======= Mobile nav toggle button ======= -->
-<button type="button" class="mobile-nav-toggle d-xl-none">
-  <i class="icofont-navigation-menu"></i>
-</button>
+<!-- Navigation -->
 
-<!-- ======= Header ======= -->
-<header id="header">
-  <div class="d-flex flex-column">
-    <div class="profile">
-      <img
-        src="assets/img/profile-img.jpg"
-        alt="Profile Image"
-        class="img-fluid rounded-circle"
-      />
-      <h1 class="text-light"><a href="index.html">Usama Javaid</a></h1>
-      <div class="social-links mt-3 text-center">
-        <a href="https://twitter.com/Usamajavaid7" class="twitter"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://www.facebook.com/usamaa.javaid" class="facebook"
-          ><i class="bx bxl-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/usama_javaid_/" class="instagram"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a href="live:usamajavaid52" class="google-plus"
-          ><i class="bx bxl-skype"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/usama-javaid/" class="linkedin"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
+<div class="main-nav">
+  <div class="container">
+    <header class="group top-nav">
+      <div
+        class="navigation-toggle"
+        data-tools="navigation-toggle"
+        data-target="#navbar-1"
+      >
+        <span class="logo">Usama Javaid</span>
       </div>
-    </div>
-
-    <nav class="nav-menu">
-      <ul>
-        <li class="active">
-          <a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a>
-        </li>
-        <li>
-          <a href="#about"><i class="bx bx-user"></i> <span>About</span></a>
-        </li>
-        <li>
-          <a href="#resume"
-            ><i class="bx bx-file-blank"></i> <span>Resume</span></a
-          >
-        </li>
-        <!-- <li>
-          <a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a>
-        </li> -->
-
-        <li>
-          <a href="#contact"><i class="bx bx-envelope"></i> Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- .nav-menu -->
-    <button type="button" class="mobile-nav-toggle d-xl-none">
-      <i class="icofont-navigation-menu"></i>
-    </button>
+      <nav id="navbar-1" class="navbar item-nav">
+        <ul>
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
   </div>
-</header>
-<!-- End Header -->
-<!-- start of animated background-->
-<!-- <div class="area">
+</div>
+
+<div class="area">
   <ul class="circles">
     <li>
       <span class="floating circle"></span>
@@ -82,612 +42,390 @@
     <li><span class="floating circle"></span></li>
     <li><span class="floating cross"></span></li>
   </ul>
-</div> -->
+</div>
 
-<!-- ======= Hero Section ======= -->
-<section
-  id="hero"
-  class="d-flex flex-column justify-content-center align-items-center"
->
-  <div class="hero-container" data-aos="fade-in">
-    <h1>Usama Javaid</h1>
-
-    <ngx-typed-js
-      [typeSpeed]="60"
-      [strings]="[
-        'Full-Stack Developer',
-        'IOS/Android Developer',
-        'Programmer',
-        'Freelancer',
-        'Photographer'
-      ]"
-      [backDelay]="1000"
-      [loop]="true"
-    >
-      <div class="ngx-typed">
-        <p class="typing"></p>
-      </div>
-    </ngx-typed-js>
-  </div>
-</section>
-<!-- End Hero -->
-
-<main id="main">
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="section-title">
-        <h2>About</h2>
-        <p>
-          Enthusiast, Love to explore new things, Self-motivated and quick
-          learner.
-        </p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img
-            src="assets/img/profile-img.jpg"
-            class="img-fluid"
-            alt="Profile Image"
-          />
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Software Engineer</h3>
-          <p class="font-italic">
-            I am a full-stack software engineer with a strong interest in
-            projects that require both conceptual and analytical thinking.
-            Fully-committed to designing and developing innovative web-based
-            apps. Always eager to learn about the latest technologies.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li>
-                  <i class="icofont-rounded-right"></i>
-                  <strong>Birthday:</strong> 10 June 1996
-                </li>
-
-                <li>
-                  <i class="icofont-rounded-right"></i>
-                  <strong>Phone:</strong> +92 302 6326656
-                </li>
-                <li>
-                  <i class="icofont-rounded-right"></i>
-                  <strong>City:</strong> Islamabad, Pakistan
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li>
-                  <i class="icofont-rounded-right"></i>
-                  <strong>Degree:</strong> Bachelors
-                </li>
-                <li>
-                  <i class="icofont-rounded-right"></i>
-                  <strong>Email:</strong> usamajavaid52@gmail.com
-                </li>
-                <li>
-                  <i class="icofont-rounded-right"></i>
-                  <strong>Freelance:</strong> Available
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- ======= Skills Section ======= -->
-  <section id="skills" class="skills section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-        <p>
-          I am expert in these technologies and I am also familiar with new
-          market and technology trends.
-        </p>
-      </div>
-
-      <div class="row skills-content">
-        <div class="col-lg-6" data-aos="fade-up">
-          <div class="progress">
-            <span class="skill">Angular Framework <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="95"
-                style="width: 95%"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Ionic Framework<i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 95%"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Bootstrap <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">VCenter <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="75"
-                style="width: 75%"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">50%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Frappe ERPNext <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 75%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="progress">
-            <span class="skill">Node.js <i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Express.js <i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">AWS S3 <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 70%"
-                aria-valuenow="70"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Nginx <i class="val">50%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"> Jenkins <i class="val">50%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill"
-              >Docker / Kubernetes <i class="val">70%</i></span
-            >
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="70"
-                style="width: 70%"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Serverless<i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 75%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">NoSQL <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">MongoDB <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Skills Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-      <div class="section-title">
-        <h2>Resume</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-up">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Usama Javaid</h4>
-            <p>
-              <em
-                >I work as a Full-Stack developer. My scope of work is in
-                building multi-tenant architecture-based applications. I
-                work(ed) in the following areas Angular 2+, Ionic Framework,
-                MongoDB, Node, Express, Serverless, TypeScript, AWS S3,Map
-                Tiler, JavaScript, HTML 5, Bootstrap, CSS</em
-              >
-            </p>
-            <ul>
-              <li>Islamabad, Pakistam</li>
-              <li>+92 302 6326656</li>
-              <li>usamajavaid52@gmail.com</li>
-            </ul>
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bachelors in Computer Science</h4>
-            <h5>2013 - 2017</h5>
-            <p>
-              <em>International Islamic University, Islamabad (IIUI)</em>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Iotascale, Islamabad, Pakistan</h4>
-            <h5>Full-Stack Engineer (June 2022 - Present)</h5>
-
-            <p>
-              Working as a Full-Stack Engineer.
-              <br />
-              Tools/Tech i am working on
-            </p>
-            <ul>
-              <li>Angular Framework</li>
-              <li>Express.js, Node.js</li>
-              <li>Jenkins CI/CD</li>
-              <li>Docker / Kubernetes</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>TechAvenue, Islamabad, Pakistan</h4>
-            <h5>Full-Stack Engineer (June 2021 - Feb 2022)</h5>
-
-            <p>
-              I worked as a Full-Stack Engineer. My tasks included writing code
-              in Angular, Node.js and deployments on projects and databasses on
-              multi-node servers (DevOps). I also look into secuirty of
-              databases.
-              <br />
-              Tools/Tech i worked on during my stay at TechAvenue
-            </p>
-            <ul>
-              <li>Angular Framework</li>
-              <li>Express.js, Node.js</li>
-              <li>Ionic Framework</li>
-              <li>MongoDB, Redis</li>
-
-              <li>Nginx, Jenkins</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Asasa.com, Islamabad, Pakistan</h4>
-            <h5>Technical Lead (July 2019 - June 2021)</h5>
-
-            <ul>
-              <li>
-                Refactored the application by making it more modular by creating
-                more modules/components as necessary.
-              </li>
-              <li>
-                Trained the team to follow best practices for development.
-              </li>
-              <li>
-                Setup internal Jenkins CI system and created jobs which did
-                automatic deployment of Angular and Node application for each
-                git push for each branch. This was used for staging as well as
-                production environment.
-              </li>
-            </ul>
-
-            <h5>Full-Stack Developer (Aug 2018 - June 2019)</h5>
-            <p>
-              I build hybrid mobile apps using Ionic Framework. I also worked as
-              a full stack developer. My responsibilities included building
-              front-end in Angular, Backend in Node.js.
-              <br />
-              I got hands on experience in the following areas:
-            </p>
-            <ul>
-              <li>Ionic Framework</li>
-              <li>Angular 4/5/7/8, Angular Universal (Front-end).</li>
-              <li>Express.js, Node.js, Serverless Framework.</li>
-              <li>MongoDB.</li>
-              <li>Amazon Web Services (AWS Lambda, S3 Storage, EC2).</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Hybrid Logics, Rawalpindi, Pakistan</h4>
-            <h5>Junior Web Developer (Jan 2018 - July 2018)</h5>
-            <ul>
-              <li>Responsible for working on tasks with best approach.</li>
-              <li>Reusable coding style.</li>
-              <li>Integration of maps and live tracking.</li>
-              <li>Worked on Ionic Framework and Angular Framework.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Resume Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row" data-aos="fade-in">
-        <div class="col-lg-12 d-flex align-items-stretch">
-          <div class="info">
-            <div class="address">
-              <i class="icofont-google-map"></i>
-              <h4>Location:</h4>
-              <p>Sohni Road, I-10/4, Islamabad, Pakistan</p>
-            </div>
-
-            <div class="email">
-              <i class="icofont-envelope"></i>
-              <h4>Email:</h4>
-              <p>usamajavaid52@gmail.com</p>
-            </div>
-
-            <div class="phone">
-              <i class="icofont-phone"></i>
-              <h4>Call:</h4>
-              <p>+92 302 6326656</p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form
-            [formGroup]="contactForm"
-            (ngSubmit)="submit()"
-            class="php-email-form"
-          >
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="name">Name<span class="required">*</span></label>
-                <input
-                  formControlName="name"
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  id="name"
-                />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="name">Phone<span class="required">*</span></label>
-                <input
-                  formControlName="phone"
-                  type="tel"
-                  class="form-control"
-                  name="phone"
-                  id="phone"
-                />
-                <div class="validate"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="name">Email<span class="required">*</span></label>
-              <input
-                formControlName="email"
-                type="email"
-                class="form-control"
-                name="email"
-                id="email"
-              />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="name">Message</label>
-              <textarea
-                formControlName="message"
-                class="form-control"
-                name="message"
-                rows="10"
-              ></textarea>
-              <div class="validate"></div>
-            </div>
-
-            <div class="text-center">
-              <button [disabled]="!contactForm.valid" type="submit">
-                Send Message
-              </button>
-            </div>
-            <div *ngIf="loader" class="loaderDiv">
-              <div class="loader"></div>
-            </div>
-          </form>
-        </div> -->
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
-</main>
-<!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer id="footer">
+<!-- Introduction -->
+<div class="intro section introSec" id="about">
   <div class="container">
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      Designed by <a href="">Usama Javaid</a>
+    <p>Hello, I’m Usama Javaid</p>
+    <div class="units-row units-split wrap">
+      <div class="unit-20">
+        <img src="assets/img/profile-img.jpg" alt="Avatar" />
+      </div>
+      <div class="unit-80">
+        <h1>
+          I am <br />
+          <ngx-typed-js
+            [typeSpeed]="60"
+            [strings]="[
+              'Full-Stack Developer',
+              'IOS/Android Developer',
+              'Programmer',
+              'Freelancer',
+              'Photographer'
+            ]"
+            [backDelay]="1000"
+            [loop]="true"
+          >
+            <div class="ngx-typed">
+              <p class="typing"></p>
+            </div>
+          </ngx-typed-js>
+        </h1>
+        <div class="hero-container" data-aos="fade-in"></div>
+      </div>
+
+      <div>
+        <p>
+          I am a full-stack software engineer with a strong interest in projects
+          that require both conceptual and analytical thinking. Fully-committed
+          to designing and developing innovative web based apps. Always eager to
+          learn about the latest technologies.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Work Experience -->
+<div class="work section second" id="experiences">
+  <div class="container">
+    <h1>Work<br />Experiences</h1>
+    <ul class="work-list">
+      <div class="hr-divider">
+        <hr />
+        <strong>June 2022 - Present</strong>
+        <hr />
+      </div>
+      <li>
+        <a
+          href="https://iotascale.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Iotascale, Islamabad, Pakistan</a
+        >
+      </li>
+      <li><strong>Position: Full-Stack Engineer</strong></li>
+      <li>
+        <p style="margin: 0">
+          As a Full-Stack Engineer at Iotascale, I am responsible for:
+        </p>
+        <ul>
+          <li>Development using Angular Framework</li>
+          <li>Building and maintaining APIs with Express.js and Node.js</li>
+          <li>Working with MongoDB for database management</li>
+          <li>Configuring and managing Nginx, Jenkins for deployment</li>
+          <li>
+            Implementing Continuous Integration/Continuous Deployment (CI/CD)
+            pipelines
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="work-list">
+      <div class="hr-divider">
+        <hr />
+        <strong>June 2021 - Feb 2022</strong>
+        <hr />
+      </div>
+      <li>
+        <a
+          href="https://www.techavenue.biz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Techavenue / SNSKIES</a
+        >
+      </li>
+      <li><strong>Position: Full-Stack Engineer</strong></li>
+      <li>
+        <p style="margin: 0">
+          As a Full-Stack Engineer at Techavenue / SNSKIES, I contributed to
+          various tasks, including:
+        </p>
+        <ul>
+          <li>Development using Angular Framework</li>
+          <li>Building and maintaining APIs with Express.js and Node.js</li>
+          <li>Working with MongoDB and Redis for database management</li>
+          <li>Configuring and managing Nginx, Jenkins for deployment</li>
+          <li>
+            Implementing Continuous Integration/Continuous Deployment (CI/CD)
+            pipelines
+          </li>
+          <li>Ensuring database security</li>
+        </ul>
+        <p style="margin: 0">
+          Tools/Tech I worked on during my stay at TechAvenue / SNSKIES:
+        </p>
+        <ul>
+          <li>Angular Framework</li>
+          <li>Express.js, Node.js</li>
+          <li>MongoDB, Redis</li>
+          <li>Nginx, Jenkins</li>
+          <li>Ionic Framework</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- AIG Section (Aug 2018 - May 2021) -->
+    <ul class="work-list">
+      <div class="hr-divider">
+        <hr />
+        <strong>Aug 2018 - May 2021</strong>
+        <hr />
+      </div>
+      <li>
+        <a href="https://asasa.com/" target="_blank" rel="noopener noreferrer"
+          >Asasa.com</a
+        >
+      </li>
+      <li>
+        <strong
+          >Position: Technical Lead (July 2019 - May 2021), Full-Stack Developer
+          (Aug 2018 - June 2019)</strong
+        >
+      </li>
+      <li>
+        <p style="margin: 0">
+          As a Technical Lead at Asasa.com, I played a crucial role in enhancing
+          the application's architecture. My key contributions include:
+        </p>
+        <ul>
+          <li>
+            Refactored the application, making it more modular through the
+            creation of additional modules/components as necessary
+          </li>
+          <li>
+            Provided training to the team to adhere to best practices for
+            development
+          </li>
+          <li>
+            Established an internal Jenkins CI system and implemented jobs for
+            automatic deployment of Angular and Node applications for each git
+            push, spanning multiple branches for staging and production
+            environments
+          </li>
+        </ul>
+        <p style="margin: 0">
+          As a Full-Stack Developer (Aug 2018 - June 2019), my responsibilities
+          included building hybrid mobile apps using the Ionic Framework and
+          developing the front-end in Angular and the backend in Node.js. I
+          gained hands-on experience in the following areas:
+        </p>
+        <ul>
+          <li>Ionic Framework</li>
+          <li>Angular 4/5/7/8, Angular Universal (Front-end)</li>
+          <li>Express.js, Node.js, Serverless Framework</li>
+          <li>MongoDB</li>
+          <li>Amazon Web Services (AWS Lambda, S3 Storage, EC2)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- AIG Section (July 2019 - May 2021) -->
+    <ul class="work-list">
+      <li><strong>(July 2019 - May 2021)</strong></li>
+      <li>
+        <a href="https://asasa.com/" target="_blank" rel="noopener noreferrer"
+          >Asasa.com</a
+        >
+      </li>
+      <li><strong>Position: Technical Lead</strong></li>
+      <li>
+        <p style="margin: 0">
+          During this period, I continued my role as Technical Lead at
+          Asasa.com, focusing on leadership and technical advancements:
+        </p>
+        <ul>
+          <li>
+            Continued refactoring the application for increased modularity
+          </li>
+          <li>
+            Oversaw the team's adherence to best practices for development
+          </li>
+          <li>
+            Managed and improved the internal Jenkins CI system, enabling
+            automatic deployment for Angular and Node applications with each git
+            push on various branches
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="work-list">
+      <!-- <li><strong>(Jan 2018 - July 2018)</strong></li> -->
+      <div class="hr-divider">
+        <hr />
+        <strong>Jan 2018 - July 2018</strong>
+        <hr />
+      </div>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer">Hybrid Logics</a>
+      </li>
+      <li><strong>Position: Junior Web Developer</strong></li>
+      <li>
+        <p style="margin: 0">
+          As a Junior Web Developer at Hybrid Logics, I undertook the following
+          responsibilities and tasks:
+        </p>
+        <ul>
+          <li>
+            Executed tasks with the best approach and adhered to a reusable
+            coding style
+          </li>
+          <li>
+            Integrated maps and live tracking functionalities into the projects
+          </li>
+          <li>
+            Worked extensively on the Ionic Framework and Angular Framework
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Award & Achievements -->
+<div class="award section second" id="education">
+  <div class="container">
+    <h1>Education</h1>
+    <ul class="award-list list-flat">
+      <li>2013-2017</li>
+      <li>Bachelors in Computer Science</li>
+      <li>International Islamic University, Islamabad (IIUI)</li>
+    </ul>
+    <!-- <ul class="award-list list-flat">
+      <li>December 2014</li>
+      <li>Audited X number of clients in only Y amount of time</li>
+      <li>Held a perfect attendance record</li>
+      <li>Were promoted after only X months in the role</li>
+    </ul>
+    <ul class="award-list list-flat">
+      <li>March 2014</li>
+      <li>Placed employees at X companies</li>
+      <li>United multiple teams post-merger</li>
+    </ul> -->
+  </div>
+</div>
+
+<!-- Technical Skills -->
+<div class="skills section second" id="skills">
+  <div class="container">
+    <h1>Technical<br />Skills</h1>
+    <ul class="skill-list list-flat">
+      <li>Web Technology</li>
+
+      <li>HTML / CSS / SASS / Javascript</li>
+      <li>Angular / Ionic / Next.js</li>
+      <!-- New skill -->
+    </ul>
+
+    <ul class="skill-list list-flat">
+      <li>Database</li>
+
+      <li>MySQL / MongoDB</li>
+      <li>MongoDB / Redis / SQL / Clickhouse / Postgresql</li>
+      <!-- New skills -->
+    </ul>
+
+    <ul class="skill-list list-flat">
+      <li>Backend</li>
+
+      <li>Node.js / Python</li>
+      <!-- New skill -->
+    </ul>
+
+    <ul class="skill-list list-flat">
+      <li>DevOps</li>
+      <ul class="skill-list list-flat">
+        <li>Cloud Platforms:</li>
+        <li>Amazon Web Services (EC2, S3, Lambda)</li>
+      </ul>
+
+      <li>Google Cloud Platform (Cloud Build)</li>
+      <br />
+      <ul class="skill-list list-flat">
+        <li>Web Server & Load Balancer:</li>
+        <li>Nginx</li>
+      </ul>
+      <br />
+      <ul class="skill-list list-flat">
+        <li>Containerization:</li>
+        <li>Docker</li>
+      </ul>
+      <br />
+      <ul class="skill-list list-flat">
+        <li>Orchestration:</li>
+        <li>Kubernetes (K8s/K3s)</li>
+      </ul>
+      <br />
+      <ul class="skill-list list-flat">
+        <li>CI/CD:</li>
+        <li>Jenkins, Google Cloud Build</li>
+      </ul>
+      <br />
+      <ul class="skill-list list-flat">
+        <li>Monitoring:</li>
+        <li>Prometheus, Grafana</li>
+      </ul>
+      <br />
+      <ul class="skill-list list-flat">
+        <li>ERP:</li>
+        <li>Frappe ErpNext</li>
+      </ul>
+    </ul>
+  </div>
+</div>
+
+<!-- Quote -->
+<div class="quote">
+  <div class="container text-centered">
+    <h1>
+      Life begins outside the end of your comfort zone <br />
+      ~ Neale Donald Walsch
+    </h1>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="units-row">
+      <div class="unit-50">
+        <p>Handcrafted by Usama Javaid</p>
+      </div>
+      <div class="unit-50">
+        <ul class="social list-flat right">
+          <li>
+            <a href="mailto:usamajavaid52@gmail.com"
+              ><i class="icofont-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Usamajavaid7" class="twitter"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/usamaa.javaid" class="facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/usama_javaid_/" class="instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="live:usamajavaid52" class="google-plus"
+              ><i class="bx bxl-skype"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/usama-javaid/" class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
-<!-- End  Footer -->
-
-<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

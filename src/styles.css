@@ -14,7 +14,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: #149ddd;
 }
