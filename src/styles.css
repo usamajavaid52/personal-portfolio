@@ -67,9 +67,9 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
-  background: #149ddd;
+  right: 53px;
+  bottom: 45px;
+  background: #f4f4f4;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -83,8 +83,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  color: #fff;
-  background: #2eafec;
+  opacity: 0.5;
   transition: background 0.2s ease-in-out;
 }
 
