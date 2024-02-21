@@ -1294,7 +1294,6 @@ input.input-smaller {
 }
 .navbar {
   font-size: 105%;
-  margin-bottom: 1.65em;
 }
 .navbar:after {
   content: "";

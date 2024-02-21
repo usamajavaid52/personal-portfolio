@@ -1,0 +1,16 @@
+.main-nav {
+  background: #f4f4f4;
+}
+.main-nav nav ul li a {
+  color: #a7a7a7;
+}
+.main-nav nav ul li.active a {
+  color: #4d4d4d;
+}
+.navbar {
+  padding: 1.5rem;
+}
+
+/* ============== */
+
+/* navbar.component.css */
