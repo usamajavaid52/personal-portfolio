@@ -130,7 +130,7 @@ a:hover {
 .intro h1:before {
   position: absolute;
   left: -220px;
-  top: -150px;
+  top: 0px;
   font-size: 270px;
   z-index: -1;
   color: #f4f4f4;
