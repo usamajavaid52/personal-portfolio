@@ -1,0 +1,2 @@
+ng build --output-path dist --base-href https://usamajavaid52.github.io/
+move dist to usamajavaid52.github.io
