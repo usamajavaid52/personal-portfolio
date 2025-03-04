@@ -1,11 +1,7 @@
-<div class="main-nav">
+<!-- <div class="main-nav">
   <div class="container">
     <header class="group top-nav">
-      <div
-        class="navigation-toggle"
-        data-tools="navigation-toggle"
-        data-target="#navbar-1"
-      >
+      <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
         <span class="logo">Usama Javaid</span>
       </div>
       <nav id="navbar-1" class="navbar item-nav">
@@ -16,6 +12,37 @@
           <li><a href="#skills">Skills</a></li>
         </ul>
       </nav>
+
+
     </header>
   </div>
-</div>
+</div> -->
+
+<nav>
+  <img class="logo" src="assets/img/logo.png" alt="logo" />
+  <input type="checkbox" id="check" [(ngModel)]="isMenuOpen">
+  <label for="check" class="checkbtn">
+    &#9776;
+  </label>
+
+  <ul>
+    <li>
+      <a [class.active]="activeSection === 'about'" (click)="setActive('about')" href="#about">About</a>
+    </li>
+    <li>
+      <a [class.active]="activeSection === 'experiences'" (click)="setActive('experiences')"
+        href="#experiences">Experiences</a>
+    </li>
+    <li>
+      <a [class.active]="activeSection === 'education'" (click)="setActive('education')" href="#education">Education</a>
+    </li>
+    <li>
+      <a [class.active]="activeSection === 'skills'" (click)="setActive('skills')" href="#skills">Skills</a>
+    </li>
+
+    <li>
+      <a (click)="downloadPDF()" href="#">Download CV</a>
+    </li>
+
+  </ul>
+</nav>

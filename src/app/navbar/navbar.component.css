@@ -1,16 +1,132 @@
-.main-nav {
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
   background: #f4f4f4;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* Changed to space-between for better layout */
+  align-items: center;
+  padding: 0 2rem;
+  /* Added padding for better spacing */
 }
-.main-nav nav ul li a {
+
+.logo {
+  height: 3rem;
+}
+
+nav ul {
+  display: flex;
+  /* Use flexbox for horizontal list */
+  margin: 0;
+  /* Removed right margin */
+}
+
+nav ul li {
+  margin: 0 1rem;
+  /* Added margin for spacing between list items */
+}
+
+nav ul li a {
   color: #a7a7a7;
-}
-.main-nav nav ul li.active a {
-  color: #4d4d4d;
-}
-.navbar {
-  padding: 1.5rem;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
 }
 
-/* ============== */
 
-/* navbar.component.css */
+nav ul li a:hover,
+nav ul li a.active {
+  color: #4d4d4d !important;
+  transition: 0.5s;
+}
+
+/* Angular active class handling */
+nav ul li a.active {
+  color: #4d4d4d !important;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: #a7a7a7;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+  nav {
+    padding: 0 1rem;
+    /* Adjusted padding for smaller screens */
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f4f4f4;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* Stack list items vertically */
+  }
+
+  nav ul li {
+    margin: 14px 0;
+    line-height: 30px;
+  }
+
+  nav ul {
+    padding-top: 3rem;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: #4d4d4d !important;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}

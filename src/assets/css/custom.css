@@ -48,6 +48,7 @@ a:hover {
     text-align: center;
   }
 }
+
 .typed-cursor {
   opacity: 1;
   font-weight: 100;
@@ -62,42 +63,53 @@ a:hover {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-moz-keyframes blink {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-ms-keyframes blink {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-o-keyframes blink {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -106,17 +118,19 @@ a:hover {
 .section.second {
   margin-bottom: 90px;
 }
+
 .section .container {
   position: relative;
 }
+
 .section .container:after {
   position: absolute;
   content: url(../img/separator.png);
   left: 20px;
 }
+
 .section .container h1 {
   text-transform: uppercase;
-  margin-bottom: 30px;
   position: relative;
 }
 
@@ -124,22 +138,29 @@ a:hover {
   padding: 95px 0px 70px 0px;
   overflow-x: hidden;
 }
+
 .intro img {
   width: 81px;
   height: 81px;
   border-radius: 99px;
 }
+
 .intro .wrap {
   margin: 30px 0px;
 }
-.intro h1:before {
-  position: absolute;
-  left: -220px;
-  top: -150px;
-  font-size: 270px;
-  z-index: 1;
-  color: #f4f4f4;
+
+@media (min-width: 891px) {
+  .intro h1:before {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    font-size: 20dvw;
+    z-index: -1;
+    color: #f4f4f4;
+    transform: translate(-57%, -50%);
+  }
 }
+
 .intro h1 span {
   font-size: 47px;
 }
@@ -147,11 +168,13 @@ a:hover {
 .work .work-list {
   margin-left: 0px;
 }
+
 .work .work-list li {
   list-style: none;
   font-size: 0.9375em;
   color: #8c8c8c;
 }
+
 .work .work-list li a {
   padding-bottom: 5px;
   font-size: 1.1875em;
@@ -159,6 +182,7 @@ a:hover {
   text-decoration: none;
   border-bottom: 1px solid #b3b3b3;
 }
+
 .work .work-list li a:hover {
   border-bottom: 1px solid #333333;
 }
@@ -166,6 +190,7 @@ a:hover {
 .award .award-list {
   margin-left: 0px;
 }
+
 .award .award-list li:first-child {
   font-size: 0.9375em;
   color: #8c8c8c;
@@ -174,6 +199,7 @@ a:hover {
 .skills .skill-list {
   margin-left: 0px;
 }
+
 .skills .skill-list li:first-child {
   font-size: 0.9375em;
   color: #8c8c8c;
@@ -184,6 +210,7 @@ a:hover {
   padding: 20px 0px;
   margin-top: 120px;
 }
+
 .quote h1 {
   margin: 100px 0px;
   padding: 40px 20px;
@@ -194,10 +221,12 @@ a:hover {
 footer {
   padding: 50px 0px 0px 0px;
 }
+
 footer .social li {
   display: inline;
   margin-left: 20px;
 }
+
 footer .social li a {
   font-size: 1.25em;
   color: #999999;
