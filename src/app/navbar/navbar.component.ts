@@ -14,12 +14,21 @@ export class NavbarComponent {
   onWindowScroll() {
     // Logic to determine active section based on scroll position
     const aboutSection = document.getElementById('about');
+    const skillsSection = document.getElementById('skills');
+    const projectSection = document.getElementById('projects')
     const experiencesSection = document.getElementById('experiences');
     const educationSection = document.getElementById('education');
-    const skillsSection = document.getElementById('skills');
+
+
 
     if (aboutSection && window.scrollY >= aboutSection.offsetTop - 100) {
       this.activeSection = 'about';
+    }
+    if (skillsSection && window.scrollY >= skillsSection.offsetTop - 100) {
+      this.activeSection = 'skills';
+    }
+    if (projectSection && window.scrollY >= projectSection.offsetTop - 100) {
+      this.activeSection = 'projects';
     }
     if (experiencesSection && window.scrollY >= experiencesSection.offsetTop - 100) {
       this.activeSection = 'experiences';
@@ -27,9 +36,8 @@ export class NavbarComponent {
     if (educationSection && window.scrollY >= educationSection.offsetTop - 100) {
       this.activeSection = 'education';
     }
-    if (skillsSection && window.scrollY >= skillsSection.offsetTop - 100) {
-      this.activeSection = 'skills';
-    }
+
+
   }
 
   setActive(section: string) {
@@ -40,7 +48,6 @@ export class NavbarComponent {
 
 
   closeMenu() {
-    console.log("ye b chal rha ha ?")
     if (window.innerWidth <= 890) {
       this.isMenuOpen = false;
     }

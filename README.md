@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Deploy on usamajavaid52.github.io
+
+Run `ng build --output-path dist --base-href https://usamajavaid52.github.io/`. The build artifacts will be stored in the `dist/` directory.
+
+After that just copy paste build files to `usamajavaid52.github.io` repository and commit

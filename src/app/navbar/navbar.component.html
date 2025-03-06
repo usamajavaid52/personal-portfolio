@@ -30,15 +30,19 @@
       <a [class.active]="activeSection === 'about'" (click)="setActive('about')" href="#about">About</a>
     </li>
     <li>
+      <a [class.active]="activeSection === 'skills'" (click)="setActive('skills')" href="#skills">Skills</a>
+    </li>
+    <li>
+      <a [class.active]="activeSection === 'projects'" (click)="setActive('projects')" href="#projects">Projects</a>
+    </li>
+    <li>
       <a [class.active]="activeSection === 'experiences'" (click)="setActive('experiences')"
         href="#experiences">Experiences</a>
     </li>
     <li>
       <a [class.active]="activeSection === 'education'" (click)="setActive('education')" href="#education">Education</a>
     </li>
-    <li>
-      <a [class.active]="activeSection === 'skills'" (click)="setActive('skills')" href="#skills">Skills</a>
-    </li>
+
 
     <li>
       <a (click)="downloadPDF()" href="#">Download CV</a>

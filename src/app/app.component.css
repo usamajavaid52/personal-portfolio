@@ -75,6 +75,14 @@
   margin-top: 100px;
 }
 
+.skill-list {
+  margin-bottom: 1rem;
+}
+
+.sublist {
+  padding-left: 0.5rem;
+}
+
 .ngx-typed {
   display: flex;
 
@@ -208,9 +216,10 @@ a:hover {
 }
 
 .quote {
-  background: url("/assets/img/bg.jpg") center;
-  padding: 20px 0px;
+  background: url(/assets/img/bg.jpg) center/cover no-repeat;
+  padding: 20px 0;
   margin-top: 120px;
+
 }
 
 .quote h1 {
@@ -446,3 +455,48 @@ a:hover {
 }
 
 /* CSS END HERE */
+
+
+
+
+.profile-header {
+  margin-bottom: 30px;
+}
+
+
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 2rem;
+}
+
+.project {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h2 {
+  color: #8c8c8c;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.project-description {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
